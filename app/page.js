@@ -26,18 +26,21 @@ export default function Home() {
     return (
       <main className="main">
         <Navbar />
-        <div className="content">
-          <h1>Sell or Rent your Property For Free</h1>
+        <div className="content p-5 ">
+        
+         <h1>Sell or Rent your Property For Free</h1>
           <p>
             Whether you’re ready to sell or looking for answers, we’ll guide you
             with data and expertise specific to your needs.
           </p>
+         </div>
           <div className="content-2">
+         
             <div className="container">
-              <div className="row d-flex justify-content-start align-items-center">
-                <div className="col-6 text-center d">
+              <div className="row d-flex justify-content-center  align-items-center">
+                <div className="col-12 col-lg-6 text-center d-flex justify-content-center d text-white">
                   <h3>Upload your property in 4 simple steps</h3>
-                  <div className="instr">
+                  <div className="instr ">
                     <div className="d-flex justify-content-start align-items-center ">
                       <img src="tick.png" alt="tick" />
                       <p className="mt-3">Add your properties Basic Details</p>
@@ -62,7 +65,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-lg-6">
                   <div className="form-main">
                     <h4>LETS GET YOU STARTED !</h4>
                     <form className="form1">
@@ -500,23 +503,24 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+      
       </main>
     );
   } else {
     return (
       <main className="main">
         <Navbar />
-        <div className="content">
+        <div className="content p-5">
           <h1>Sell or Rent your Property For Free</h1>
           <p>
             Whether you’re ready to sell or looking for answers, we’ll guide you
             with data and expertise specific to your needs.
           </p>
+          </div>
           <div className="content-2">
-            <div className="container">
+            <div className="container p-5">
               <div className="row d-flex justify-content-start align-items-center">
-                <div className="col-6 text-center d">
+                <div className="col-12 text-white col-lg-6 text-center d">
                   <h3>Upload your property in 4 simple steps</h3>
                   <div className="instr">
                     <div className="d-flex justify-content-start align-items-center ">
@@ -543,7 +547,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-lg-6">
                   <div className="form-main">
                     <h4>LETS GET YOU STARTED !</h4>
                     <form
@@ -594,7 +598,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+       
       </main>
     );
   }
