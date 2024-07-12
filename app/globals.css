@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.navbar {
+  background-color: white !important;
+}
+
+.navbar .nav-link {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-wrap: nowrap;
+}
+
+.navbar-nav {
+  width: 60%;
+  display: flex;
+  gap: 30px;
+  margin-left: 30%;
+}
+
+.translate {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.main {
+  background-color: #122b49;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  padding: 50px;
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.content-2 {
+  height: 60vh;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.instr {
+  margin-top: 30px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.d {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-main {
+  padding: 50px;
+  background-color: white;
+  height: 376px;
+  width: 608px;
+  border-radius: 16px;
+}
+
+.form-main h4 {
+  font-size: 20px;
+  color: black;
+}
+
+.form1 {
+  padding: 20px;
+  height: 230px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+.form1 input {
+  border: 2px solid #d9d9d9;
+  border-radius: 2px;
+  width: 312px;
+}
+.form1::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.form1::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* color of the tracking area */
+}
+
+.form1::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: rgb(30, 30, 30);
+}
+
+label {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif !important;
+  font-size: 18px !important;
+}
+/* Hide the browser's default radio button */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+/* On mouse-over, add a grey background color */
+
+/* When the radio button is checked, add a blue background */
+.container1 input:checked ~ .checkmark {
+  background-color: #fffdfd;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container1 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container1 .checkmark:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+}
+
+.bottom p {
+  display: flex;
+  flex-direction: row;
+  color: #7a7a7a;
+  font-size: 12px;
+}
+
+.bottom {
+  justify-content: space-between;
+}
+
+.bottom button {
+  background-color: #122b49;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 8px;
+}
+
+.country-selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-selector select {
+  width: 60px;
+  height: 40px;
+  border: 2px solid #d9d9d9;
+  margin-top: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.country-selector input {
+  width: 312px;
+  padding: 10px;
+}
+
+.inp {
+  border: 2px solid #d9d9d9;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.outer {
+  overflow: hidden;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextButton {
+  background-color: #122b49;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 2px;
+}
+.inner {
+  position: relative;
+  height: 70vh;
+  width: 70%;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px 2px rgba(18, 43, 73, 0.18);
+}
+.botm {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 20px;
+  width: 100%;
+  background-color: #122b49;
+  color: white;
+  font: inter;
+  top: 90%;
+  left: 0%;
+  border-radius: 0px 0px 10px 10px;
+  align-items: center;
+}
+
+.b {
+  border: 2px solid black;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  height: 10vh;
+  background-color: #fafafa;
+}
+
+.tab {
+  padding: 10px 20px;
+
+  text-wrap: nowrap;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  width: 100%;
+  border-bottom: 5px solid #d6d6d6;
+}
+
+.activeTab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  width: 100%;
+  border-bottom: 5px solid #122b49;
+}
+
+.contentContainer {
+  padding: 20px;
+  border: 1px solid #fffefe;
+  background-color: #fff;
+}
+
+.propertyd {
+  padding: 20px;
+  height: 40vh;
+  font-size: 16px !important;
+  overflow-y: scroll;
+  font-family: "Inter", sans-serif !important;
+}
+
+.propertyd::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.propertyd::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* color of the tracking area */
+}
+
+.propertyd::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+.propertyi {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-radio {
+}
+.custom-radio input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #122b49;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-radio input[type="radio"]::before {
+  content: "";
+  display: flex;
+  flex-direction: row;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #122b49;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.custom-radio input[type="radio"]:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-radio label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.custom-radio label span {
+  color: red;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+}
+
+.options button {
+  background-color: white;
+  border: 2px solid #d6d6d6;
+  border-radius: 30px;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+}
+
+.display input {
+  border: 2px solid #7a7a7a;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+#directions {
+  border: 2px solid #7a7a7a;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.inpd {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.inpd input {
+  width: 90%;
+  border: 2px solid #7a7a7a;
+  padding: 10px;
+  border-radius: 0;
+  outline: none;
+  border-left: 0px;
+}
+
+.map {
+  position: relative;
+}
+
+.loca {
+  background-color: white;
+  padding: 0px;
+  border: 2px solid #7a7a7a;
+  padding: 10px;
+  border-right: 0px;
+  border-radius: 0;
+  margin-top: 0px;
+}
+
+/* styles/globals.css or an appropriate CSS file */
+/* styles/globals.css or an appropriate CSS file */
+.cntr {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cbx {
+  position: relative;
+  top: 1px;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #c8ccd4;
+  border-radius: 3px;
+  vertical-align: middle;
+  transition: background 0.1s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.cbx:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 7px;
+  height: 14px;
+  opacity: 0;
+  transform: rotate(45deg) scale(0);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s ease;
+  transition-delay: 0.15s;
+}
+
+.lbl {
+  margin-left: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#cbx1:checked + .cbx,
+#cbx2:checked + .cbx,
+#cbx3:checked + .cbx {
+  border-color: transparent;
+  background: #122b49;
+  animation: jelly 0.6s ease;
+}
+
+#cbx1:checked + .cbx:after,
+#cbx2:checked + .cbx:after,
+#cbx3:checked + .cbx:after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+
+@keyframes jelly {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.hidden-xs-up {
+  display: none !important;
+}
+
+.ds {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inps {
+  accent-color: #121212;
+}
+
+.det {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #d6d6d6;
+  height: 20vh;
+}
+
+.photo label,
+.removebtn {
+  background-color: #122b49;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay svg{
+  position: absolute;
+  left: 90%;
+}
+.overlayContent {
+  position: relative;
+  padding: 60px;
+  border: 2px solid;
+  background: white;
+  width: max-content;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.overlayContent button {
+  cursor: pointer;
+}
+
+.overlayContent button:hover {
+  background: #424242;
+}
+
+
+@media (max-width:450px) {
+  .activeTab{
+    font-size: 10px;
+
+  }
+}
+
+
+.btncont{
+  
+  display: flex;
+ gap: 30px;
+}
+
+.preloader{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
